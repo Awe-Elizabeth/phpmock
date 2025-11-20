@@ -1,0 +1,87 @@
+{
+  "payments": [
+    {
+      "payment_id": 982734,
+      "customer_name": "John Doe",
+      "amount": "15000.00",
+      "currency": "NGN",
+      "channel": "bank_transfer",
+      "status": "SUCCESS",
+      "created_at": "2025-02-17 14:22:10",
+      "meta": {
+        "legacy_reference": "TRX-2025-0001",
+        "processor": "LegacyPayEngine"
+      }
+    },
+    {
+      "payment_id": 982735,
+      "customer_name": "Adaobi Michael",
+      "amount": "5000.00",
+      "currency": "NGN",
+      "channel": "card",
+      "status": "FAILED",
+      "created_at": "2025-02-17 16:10:44",
+      "meta": {
+        "legacy_reference": "TRX-2025-0002",
+        "processor": "LegacyPayEngine",
+        "failure_reason": "INSUFFICIENT_FUNDS"
+      }
+    },
+    {
+      "payment_id": 982736,
+      "customer_name": "Samuel Odum",
+      "amount": "23000.00",
+      "currency": "NGN",
+      "channel": "ussd",
+      "status": "PENDING",
+      "created_at": "2025-02-18 08:50:02",
+      "meta": {
+        "legacy_reference": "TRX-2025-0003",
+        "processor": "LegacyPayEngine"
+      }
+    }
+  ],
+
+  "customers": [
+    {
+      "customer_id": 1001,
+      "full_name": "John Doe",
+      "email": "john.doe@example.com",
+      "phone": "+2348012345678",
+      "status": "ACTIVE",
+      "created_at": "2023-11-12 09:15:22",
+      "meta": {
+        "legacy_reference": "CUS-0001",
+        "risk_score": 32,
+        "kyc_level": "BVN_VERIFIED"
+      }
+    },
+    {
+      "customer_id": 1002,
+      "full_name": "Adaobi Michael",
+      "email": "adaobi.michael@example.com",
+      "phone": "+2348098765432",
+      "status": "SUSPENDED",
+      "created_at": "2024-01-03 12:47:10",
+      "meta": {
+        "legacy_reference": "CUS-0002",
+        "risk_score": 71,
+        "kyc_level": "BASIC",
+        "suspension_reason": "MULTIPLE_FAILED_LOGINS"
+      }
+    },
+    {
+      "customer_id": 1003,
+      "full_name": "Samuel Odum",
+      "email": "samuel.odum@example.com",
+      "phone": "+2348076543210",
+      "status": "ACTIVE",
+      "created_at": "2024-05-29 18:20:41",
+      "meta": {
+        "legacy_reference": "CUS-0003",
+        "risk_score": 19,
+        "kyc_level": "FULL_KYC"
+      }
+    }
+  ]
+}
